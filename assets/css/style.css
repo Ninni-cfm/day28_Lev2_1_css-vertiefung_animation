@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+}
+div {
+    border: 5px dotted lightgreen;
+
+    width: 20vw;
+    height: calc(100vh - 10px);
+    animation: stroboscope 1s linear infinite;
+    font-size: 4em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div1 {
+    animation-duration: 2000ms;
+}
+#div2 {
+    animation-duration: 1000ms;
+}
+#div3 {
+    animation-duration: 500ms;
+}
+#div4 {
+    animation-duration: 250ms;
+}
+#div5 {
+    animation-duration: 125ms;
+}
+
+@keyframes stroboscope {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color: white;
+    }
+}
